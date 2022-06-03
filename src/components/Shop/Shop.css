@@ -1,0 +1,26 @@
+
+.search-product{
+    background-color: rgb(46, 46, 46);
+    text-align: center;
+    padding: 10px;
+}
+
+.search-product input{
+    width: 70%;
+    height: 30px;
+    border: none;
+    border-radius: 5px;
+    
+    line-height: 70px;
+}
+
+.product-details{
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    grid-gap: 10px;
+    padding: 10px;
+}
+
+.products{
+    border-right: 1px solid rgb(73, 71, 71);
+}

@@ -1,0 +1,25 @@
+
+.logo{
+    width: 20%;
+}
+
+.nav{
+    background-color: black;
+    align-items: center;
+    justify-content: center;
+    line-height: 40px;
+}
+
+.nav a{
+    color: white;
+    text-decoration: none;
+    margin-inline: 20px;
+    padding: 10px;
+    transition: all 0.3s ease-in-out;
+}
+
+.nav a:hover{
+    color: black;
+    background-color: rgb(146, 143, 143);
+
+}

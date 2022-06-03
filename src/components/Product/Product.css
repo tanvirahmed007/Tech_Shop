@@ -1,0 +1,31 @@
+
+.productData{
+    margin-left: 10%;
+    border-bottom: 1px solid rgb(73, 71, 71);
+    padding: 10px;
+}
+.product-img{
+    width: 30%;
+}
+
+.product-info{
+    display: flex;
+    margin-bottom: 10px;
+    
+}
+
+.product-info-text{
+    text-align: start;
+    margin-inline: 10px;
+
+}
+
+.purchase-btn{
+    
+    background-color: rgb(233, 200, 56);
+    border: none;
+    border-radius: 5px;
+    line-height: 25px;
+    padding-inline: 20px;
+    cursor: pointer;
+}

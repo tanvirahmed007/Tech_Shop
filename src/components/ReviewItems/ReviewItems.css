@@ -1,0 +1,11 @@
+.cart-info{
+    padding: 5%;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid rgb(161, 159, 159);
+}
+
+.cart-container{
+    text-align: start;
+    padding-left: 3%;
+}

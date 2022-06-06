@@ -1,0 +1,10 @@
+
+.cart-review{
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    grid-gap: 1rem;
+}
+
+.side-cart{
+    border-left: 1px solid rgb(133, 131, 131);
+}

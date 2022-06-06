@@ -45,7 +45,18 @@ const [displaySearchProducts, setDisplaySearchProducts] = useState([]);
   }, [products]);
 
   const clickHandleToCart = (product) => {
-    const newCart = [...cart, product];
+    const exists = cart.find(p => p.key === product.key);
+    let newCart = [];
+    if(exists){
+      const rest = cart.filter(p => p.key !== product.key);
+      exists.quantity += 1;
+      newCart = [...rest, product];
+    }else{
+      product.quantity = 1;
+      setCart([...cart, product]);
+      
+    }
+    
     setCart(newCart);
     addToDb(product.key);
   };

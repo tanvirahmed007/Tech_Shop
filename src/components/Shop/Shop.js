@@ -49,11 +49,11 @@ const [displaySearchProducts, setDisplaySearchProducts] = useState([]);
     let newCart = [];
     if(exists){
       const rest = cart.filter(p => p.key !== product.key);
-      exists.quantity += 1;
+      exists.quantity = exists.quantity + 1;
       newCart = [...rest, product];
     }else{
       product.quantity = 1;
-      setCart([...cart, product]);
+      newCart=[...cart, product];
       
     }
     

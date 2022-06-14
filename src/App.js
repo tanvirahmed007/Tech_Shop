@@ -11,8 +11,13 @@ import {
 import OrderReview from './components/OrderReview/OrderReview';
 import NotFound from './components/NotFound/NotFound';
 import PlaceOrder from './components/PlaceOrder/PlaceOrder';
+import Login from './components/Login/Login';
+import Register from './components/Register/Register';
+
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 function App() {
+  
   return (
     <div className="App">
       <Header></Header>
@@ -20,8 +25,12 @@ function App() {
         <Routes>
           <Route path="/" element={<Shop></Shop>}>  </Route>
           <Route path="/review" element={<OrderReview></OrderReview>}>  </Route>
-          <Route path="*" element={<NotFound></NotFound>}>  </Route>
           <Route path="/placeorder" element={<PlaceOrder></PlaceOrder>}>  </Route>
+          <Route path="/login" element={<Login></Login>}></Route>
+          
+          <Route path="/register" element={<Register></Register>}></Route>
+          <Route path="*" element={<NotFound></NotFound>}>  </Route>
+          
           
         </Routes>
       </Router>
